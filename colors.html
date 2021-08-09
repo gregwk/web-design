@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/colors.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2 class="page-heading">Web Design: Colors</h2>
+    <h2>Contrast Ratios</h2>
+    <p>
+      WCAG 2.0 level AA requires a contrast ratio of at least 4.5:1 for normal
+      text and 3:1 for large text (see WebAIM.org). In the color blocks below,
+      the light grey, the orange, and the violate all have a poor contrast ratio
+      with white. Tomato and light sea green have a ratio that is close to 3, so
+      they do not quite make the cut for the bold text. Dodger blue and gray
+      have ratios above 3 but less than 4, so they are not acceptable for normal
+      white text, but they are fine for large or bold text. Slate Blue is the
+      only base color that has an acceptable ratio for normal white text.
+    </p>
+
+    <p>
+      To check the accessibility of text in Chrome or Firefox, open the
+      developer tools, chose "Accessibility" and then click the icon to the left
+      (accessible object picker). Now when you hover over some text, you will
+      see the contrast ratio of the text with the background.
+    </p>
+
+    <h3>Color Samples - Base</h3>
+    <ul class="color-samples-base">
+      <li class="sample-1">Tomato</li>
+      <li class="sample-2">Orange</li>
+      <li class="sample-3">Dodger Blue</li>
+      <li class="sample-4">Medium Sea Green</li>
+      <li class="sample-5">Gray</li>
+      <li class="sample-6">Slate Blue</li>
+      <li class="sample-7">Violet</li>
+      <li class="sample-8">Light Gray</li>
+    </ul>
+    <h3>Color Samples - Dark</h3>
+    <ul class="color-samples-dark">
+      <li class="sample-1">Red Orange</li>
+      <li class="sample-2">Dark Orange</li>
+      <li class="sample-3">Royal Blue</li>
+      <li class="sample-4">Sea Green</li>
+      <li class="sample-5">Dim Gray</li>
+      <li class="sample-6">Dark Slate Blue</li>
+      <li class="sample-7">Dark Violet</li>
+      <li class="sample-8">Gray</li>
+    </ul>
+    <h3>Color Samples - Big and Bold</h3>
+    <ul class="color-samples-bold">
+      <li class="sample-1">Tomato</li>
+      <li class="sample-2">Orange</li>
+      <li class="sample-3">Dodger Blue</li>
+      <li class="sample-4">Medium Sea Green</li>
+      <li class="sample-5">Gray</li>
+      <li class="sample-6">Slate Blue</li>
+      <li class="sample-7">Violet</li>
+      <li class="sample-8">Light Gray</li>
+    </ul>
+
+    <h2>Bad Color Combinations</h2>
+    <p>
+      These color combinations are sometimes used on websites to grab the
+      reader's attention, but they are notoriously difficult to read.
+    </p>
+
+    <h3>Yellow on Green</h3>
+    <div class="yellow-on-green">Yellow on Green</div>
+    <p>
+      Hues that are right next to each other on the color wheel are typically
+      difficult to read when one is used as text and the other as a background.
+      Yellow and green can be tempting to use together because they both grab
+      your attention (especially if bright green is used). Both this combination
+      is quite difficult to read and should be avoided as a rule.
+    </p>
+
+    <h3>Green on Red</h3>
+    <div class="green-on-red">Green on Red</div>
+    <p>
+      Green and red side-by-side are very hard on the eyes. I lightened up the
+      green significantly here but it is still difficult to read. More
+      importantly, red-green colorblindness is the most common type of
+      colorblindness. So you should always avoid green text on a red background
+      (and vice-versa), but you should also be careful any time you are
+      considering using both colors side-by-side on your website. Try to keep
+      them separated with another, preferably neutral, color.
+    </p>
+
+    <h3>Purple on Green</h3>
+    <div class="purple-on-green">Purple on Green</div>
+    <p>
+      Purple and green is a popular color combination, but it shares many of the
+      problems that red and green have, so be careful when using this
+      combination on your website, and do not use purple text on a green
+      background.
+    </p>
+
+    <h3>Red on Black</h3>
+    <div class="red-on-black">Red on Black</div>
+    <p>
+      Many students <span style="font-style: italic">love</span> this
+      combination for websites, and it's not surprising - the combination
+      invokes intensity and the occult. But red text on a black background is
+      extremely difficult to read, and for those with red-green colorblindness,
+      it's nearly impossible. Try this experiment: Go to the accessibility tool
+      in Firefox and simulate achromatopsia. This will effectively eliminate all
+      color on this web page. Now look at the red text on the black background,
+      you can barely see it. The contrast ratio is less than 2.5.
+    </p>
+    <p>
+      If you want to see a site that handles red and black well, take a look at
+      DVD.com. They're logo is red, so they want to keep red as the accent
+      color, and they header and footer on most of the pages is black, but they
+      avoid ever using red text on a black background.
+    </p>
+    <h4>Pure Black Backgrounds</h4>
+    <p>
+      Some web designers think that you should avoid pure black backgrounds in
+      general, because no color can compete with black's intensity. Some of
+      these people recommend using something close to black, but not black. An
+      example would be the header from Amazon's website. At first glance it
+      looks black, but if you examine it closely its actually a very dark shade
+      of blue-green. The idea is that it's easier on the eyes, and the logo,
+      especially the yellow arrow, does not look as jarring as it would on a
+      pure black background.
+    </p>
+
+    <h3>Blue on Red</h3>
+    <div class="blue-on-red">Blue on Red</div>
+    <p>
+      Blue text on a red background is notoriously hard to read, and it has
+      something to do with the way our eyes work. When we see blue text on a red
+      background, our brains are perceiving (or trying to percieve) a 3D image
+      from the 2D image in front of them. This also occurs with green text on
+      red backgrounds. The effect is know as chromostereopsis. Needless to say,
+      this effect plays havoc with readability.
+    </p>
+  </body>
+</html>

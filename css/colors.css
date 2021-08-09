@@ -1,0 +1,150 @@
+body {
+  padding: 2em;
+}
+
+h2,
+h3 {
+  font-weight: normal;
+}
+
+h2 {
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+.page-heading {
+  font-weight: 700;
+  color: dimgray;
+}
+
+h3 {
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+h4,
+p {
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  color: white;
+  gap: 1em;
+}
+
+li {
+  padding: 1em;
+  text-align: center;
+}
+
+.sample-1 {
+  background-color: tomato;
+}
+
+.sample-2 {
+  background-color: orange;
+}
+
+.sample-3 {
+  background-color: dodgerblue;
+}
+
+.sample-4 {
+  background-color: mediumseagreen;
+}
+
+.sample-5 {
+  background-color: gray;
+}
+
+.sample-6 {
+  background-color: slateblue;
+}
+
+.sample-7 {
+  background-color: violet;
+}
+
+.sample-8 {
+  background-color: lightgray;
+}
+
+.color-samples-bold {
+  /* font-size: 1.2em; */
+  font-weight: 700;
+}
+
+.color-samples-dark .sample-1 {
+  background-color: orangered;
+}
+
+.color-samples-dark .sample-2 {
+  background-color: darkorange;
+}
+
+.color-samples-dark .sample-3 {
+  background-color: royalblue;
+}
+
+.color-samples-dark .sample-4 {
+  background-color: seagreen;
+}
+
+.color-samples-dark .sample-5 {
+  background-color: dimgray;
+}
+
+.color-samples-dark .sample-6 {
+  background-color: darkslateblue;
+}
+
+.color-samples-dark .sample-7 {
+  background-color: darkviolet;
+}
+
+.color-samples-dark .sample-8 {
+  background-color: darkgray;
+}
+
+.yellow-on-green {
+  color: yellow;
+  background-color: green;
+  width: 300px;
+  padding: 1em;
+  text-align: center;
+}
+
+.green-on-red {
+  color: lightgreen;
+  background-color: red;
+  width: 300px;
+  padding: 1em;
+  text-align: center;
+}
+
+.purple-on-green {
+  color: purple;
+  background-color: limegreen;
+  width: 300px;
+  padding: 1em;
+  text-align: center;
+}
+
+.red-on-black {
+  color: red;
+  background-color: black;
+  width: 300px;
+  padding: 1em;
+  text-align: center;
+}
+
+.blue-on-red {
+  color: blue;
+  background-color: red;
+  width: 300px;
+  padding: 1em;
+  text-align: center;
+}
