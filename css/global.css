@@ -25,7 +25,8 @@
   --neutral-color: #4e4e4e;
 
   --primary-color: dodgerblue;
-  --primary-color-dark: darkblue;
+  --primary-color-dark: royalblue;
+  --primary-color-extra-dark: darkblue;
   --primary-background-color: whitesmoke;
   --secondary-background-color: burlywood;
   --card-background-color: navajowhite;
@@ -197,10 +198,11 @@ body {
 
 a,
 a:visited {
-  color: var(--primary-color);
+  color: var(--primary-color-dark);
+  font-weight: bold;
 }
 
 a:hover,
 a:active {
-  color: var(--primary-color-dark);
+  color: var(--primary-color-extra-dark);
 }

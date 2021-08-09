@@ -148,3 +148,12 @@ li {
   padding: 1em;
   text-align: center;
 }
+
+.coding-books-logo {
+  color: red;
+  background-color: black;
+  width: 300px;
+  padding: 0.5em 1em;
+  text-align: left;
+  font-size: 0.9em;
+}

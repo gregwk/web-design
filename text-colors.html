@@ -9,7 +9,7 @@
     <title>Document</title>
   </head>
   <body>
-    <h2 class="page-heading">Web Design: Colors</h2>
+    <h2 class="page-heading">Web Design: Text and Background Colors</h2>
     <h2>Contrast Ratios</h2>
     <p>
       WCAG 2.0 level AA requires a contrast ratio of at least 4.5:1 for normal
@@ -23,10 +23,10 @@
     </p>
 
     <p>
-      To check the accessibility of text in Chrome or Firefox, open the
-      developer tools, chose "Accessibility" and then click the icon to the left
-      (accessible object picker). Now when you hover over some text, you will
-      see the contrast ratio of the text with the background.
+      To check the accessibility of text in Firefox, open the developer tools,
+      chose "Accessibility" and then click the icon to the left (accessible
+      object picker). Now when you hover over some text, you will see the
+      contrast ratio of the text with the background.
     </p>
 
     <h3>Color Samples - Base</h3>
@@ -104,7 +104,7 @@
     <div class="red-on-black">Red on Black</div>
     <p>
       Many students <span style="font-style: italic">love</span> this
-      combination for websites, and it's not surprising - the combination
+      combination for websites, and it's not surprising – the combination
       invokes intensity and the occult. But red text on a black background is
       extremely difficult to read, and for those with red-green colorblindness,
       it's nearly impossible. Try this experiment: Go to the accessibility tool
@@ -114,20 +114,22 @@
     </p>
     <p>
       If you want to see a site that handles red and black well, take a look at
-      DVD.com. They're logo is red, so they want to keep red as the accent
-      color, and they header and footer on most of the pages is black, but they
-      avoid ever using red text on a black background.
+      <a href="https://dvd.com" target="_blank">DVD.com</a>. They're logo is
+      red, so they want to keep red as the accent color, and they header and
+      footer on most of the pages is black, but they avoid ever using red text
+      on a black background.
     </p>
     <h4>Pure Black Backgrounds</h4>
     <p>
       Some web designers think that you should avoid pure black backgrounds in
       general, because no color can compete with black's intensity. Some of
       these people recommend using something close to black, but not black. An
-      example would be the header from Amazon's website. At first glance it
-      looks black, but if you examine it closely its actually a very dark shade
-      of blue-green. The idea is that it's easier on the eyes, and the logo,
-      especially the yellow arrow, does not look as jarring as it would on a
-      pure black background.
+      example would be the header from
+      <a href="https://amazon.com" target="_blank">Amazon's website</a>. At
+      first glance it looks black, but if you examine it closely its actually a
+      very dark shade of blue-green. The idea is that it's easier on the eyes,
+      and the logo, especially the yellow arrow, does not look as jarring as it
+      would on a pure black background.
     </p>
 
     <h3>Blue on Red</h3>
@@ -140,5 +142,30 @@
       red backgrounds. The effect is know as chromostereopsis. Needless to say,
       this effect plays havoc with readability.
     </p>
+
+    <h2>An Example Color Problem</h2>
+    <p>
+      In one of my courses, a student wanted to create a text logo involving red
+      on a black background. The text logo looked something like this.
+    </p>
+    <div class="coding-books-logo">
+      Coding<br />
+      <span style="color: white">&lt;/&gt;</span> Books
+    </div>
+    <p>
+      Not only does this font involve red text on a black background, but the
+      text is small and thin, especially for a logo. Logo text is usually
+      larger, bolder, and involves a font that looks good when it is both large
+      and bold. The student did not want to give up the red color altogether
+      because he had already commited to it elsewhere on the site. We mitigated
+      the readability problem by chosing a background that was not quite black,
+      increasing the font size and weight, and making one of the words gray
+      instead of red. Finally, we chose a font (Nunito) that looked distinctive
+      enough for a logo. This was the result.
+    </p>
+    <div class="coding-books-logo-redux">
+      Coding<br />
+      <span style="color: white">&lt;/&gt;</span> Books
+    </div>
   </body>
 </html>
