@@ -295,7 +295,7 @@
       </li>
     </ul>
 
-    <h2>Example: Red text in Logo</h2>
+    <h2>Example: Red Logo Text</h2>
     <p>
       In one of my courses, a student wanted to create a text logo involving red
       on a black background. The text logo looked something like this.
@@ -337,7 +337,7 @@
       <span class="coding-books-logo-symbol">&nbsp;&lt;/&gt;</span
       ><span class="coding-books-logo-gray">&nbsp;Books</span>
     </div>
-    <h2>Example: Low Contrast in Book Boxes</h2>
+    <h2>Example: Low Contrast Book Boxes</h2>
     <p>
       Some of the text in the book boxes below have a relatively low contrast
       ratio with respect to their background. The read-now button is the worst
@@ -352,8 +352,8 @@
           <div class="book-title">High Fidelity</div>
           <div class="book-author">Nick Hornby</div>
           <div class="book-price">$8.99</div>
-          <div class="read-now-button">Read Now</div>
-          <div class="add-to-cart-button">Add to Cart</div>
+          <button class="read-now-button">Read Now</button>
+          <button class="add-to-cart-button">Add to Cart</button>
         </div>
       </div>
       <div class="book-box">
@@ -364,33 +364,57 @@
           </div>
           <div class="book-author">Mark Haddon</div>
           <div class="book-price">$11.99</div>
-          <div class="read-now-button">Read Now</div>
-          <div class="add-to-cart-button">Add to Cart</div>
+          <button class="read-now-button">Read Now</button>
+          <button class="add-to-cart-button">Add to Cart</button>
         </div>
       </div>
     </div>
-    <p>Here is how we fixed it.</p>
-    <div class="book-boxes-low-contrast">
+    <p>
+      To fix these problems, we made the book boxes white, along with the text
+      in both buttons. The white book boxes did not provide sufficient contrast
+      with the background of the web page, which is nearly white also, so
+      rounded the corners of the book boxes and added a drop shadow. For the
+      drop shadow, we tried black, purple (background of add-to-cart button) and
+      muted purple (background of read-now button). The muted purple seemed to
+      provide the best fit. Since all the text now had sufficient contrast, we
+      had some room to play with the font styles and sizes. We didn't want an
+      underline for the author since that implies a link, so we changed it to
+      italics. We slightly decreased the font size of the title, author, and
+      price, and we made the price bold. We gave author and price text the muted
+      purple color.
+    </p>
+    <p>
+      The add-to-cart button was a different width depending on the length of
+      the book title, so used the "align-self: flex-end" property to move it to
+      the right and keep its width consistent. The read-now button did not look
+      good next to the add-to-cart button, so we moved it over the book image.
+      The white text on the read-now button looked a bit jarring, so we made it
+      slightly off-white. We did not want the read-now button to compete with
+      the add-to-cart button.
+    </p>
+    <div class="book-boxes-low-contrast-fix">
       <div class="book-box">
-        <div class="book-image"></div>
+        <div class="book-image">
+          <button class="read-now-button">Read Now</button>
+        </div>
         <div class="book-info">
           <div class="book-title">High Fidelity</div>
           <div class="book-author">Nick Hornby</div>
           <div class="book-price">$8.99</div>
-          <div class="read-now-button">Read Now</div>
-          <div class="add-to-cart-button">Add to Cart</div>
+          <button class="add-to-cart-button">Add to Cart</button>
         </div>
       </div>
       <div class="book-box">
-        <div class="book-image"></div>
+        <div class="book-image">
+          <button class="read-now-button">Read Now</button>
+        </div>
         <div class="book-info">
           <div class="book-title">
             The Curious Incident of the Dog in the Night-Time
           </div>
           <div class="book-author">Mark Haddon</div>
           <div class="book-price">$11.99</div>
-          <div class="read-now-button">Read Now</div>
-          <div class="add-to-cart-button">Add to Cart</div>
+          <button class="add-to-cart-button">Add to Cart</button>
         </div>
       </div>
     </div>
