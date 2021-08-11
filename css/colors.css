@@ -234,21 +234,46 @@ strong {
 }
 
 .book-box {
+  display: flex;
+  gap: 0.75em;
   background-color: #cec5b3;
-  padding: 1em;
+  padding: 0.75em;
 }
 
 .book-image {
-  width: 80px;
+  min-width: 130px;
   height: 200px;
+  background-color: black;
+}
+
+.book-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25em;
+  max-width: 25ch;
+}
+
+.book-title {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.book-author {
+  text-decoration: underline;
 }
 
 .read-now-button {
   background-color: #6b6182;
   color: #cec5b3;
+  padding: 0.25em 1em;
+  text-align: center;
+  font-size: 0.8em;
+  margin-top: auto;
 }
 
 .add-to-cart-button {
   background-color: #724690;
   color: #cec5b3;
+  padding: 0.5em 1em;
+  text-align: center;
 }
