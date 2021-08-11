@@ -2,123 +2,115 @@ body {
   padding: 2em;
 }
 
+h1,
 h2,
-h3 {
-  font-weight: normal;
-}
-
-h2 {
+h3,
+h4 {
+  font-weight: bold;
+  color: royalblue;
   margin-top: 2em;
   margin-bottom: 1em;
 }
 
-.page-heading {
-  font-weight: 700;
-  color: dimgray;
-}
-
-h3 {
-  margin-top: 2em;
-  margin-bottom: 1em;
-}
-
-h4,
 p {
-  margin-top: 1em;
   margin-bottom: 0.5em;
 }
 
-ul {
+.color-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   color: white;
   gap: 1em;
 }
 
-li {
+.color-list > li {
   padding: 1em;
   text-align: center;
 }
 
-.sample-1 {
+.color-list li:nth-child(1) {
   background-color: tomato;
 }
 
-.sample-2 {
+.color-list li:nth-child(2) {
   background-color: orange;
 }
 
-.sample-3 {
+.color-list li:nth-child(3) {
   background-color: dodgerblue;
 }
 
-.sample-4 {
+.color-list li:nth-child(4) {
   background-color: mediumseagreen;
 }
 
-.sample-5 {
+.color-list li:nth-child(5) {
   background-color: gray;
 }
 
-.sample-6 {
+.color-list li:nth-child(6) {
   background-color: slateblue;
 }
 
-.sample-7 {
+.color-list li:nth-child(7) {
   background-color: violet;
 }
 
-.sample-8 {
+.color-list li:nth-child(8) {
   background-color: lightgray;
 }
 
-.color-samples-bold {
-  /* font-size: 1.2em; */
+.color-list-bold {
   font-weight: 700;
 }
 
-.color-samples-dark .sample-1 {
+.color-list.color-list-dark li:nth-child(1) {
   background-color: orangered;
 }
 
-.color-samples-dark .sample-2 {
+.color-list.color-list-dark li:nth-child(2) {
   background-color: darkorange;
 }
 
-.color-samples-dark .sample-3 {
+.color-list.color-list-dark li:nth-child(3) {
   background-color: royalblue;
 }
 
-.color-samples-dark .sample-4 {
+.color-list.color-list-dark li:nth-child(4) {
   background-color: seagreen;
 }
 
-.color-samples-dark .sample-5 {
+.color-list.color-list-dark li:nth-child(5) {
   background-color: dimgray;
 }
 
-.color-samples-dark .sample-6 {
+.color-list.color-list-dark li:nth-child(6) {
   background-color: darkslateblue;
 }
 
-.color-samples-dark .sample-7 {
+.color-list.color-list-dark li:nth-child(7) {
   background-color: darkviolet;
 }
 
-.color-samples-dark .sample-8 {
+.color-list.color-list-dark li:nth-child(8) {
   background-color: darkgray;
+}
+
+.color-sample {
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 .yellow-on-green {
   color: yellow;
-  background-color: green;
+  background-color: limegreen;
   width: 300px;
   padding: 1em;
   text-align: center;
 }
 
 .green-on-red {
-  color: lightgreen;
+  color: limegreen;
   background-color: red;
   width: 300px;
   padding: 1em;
@@ -152,8 +144,45 @@ li {
 .coding-books-logo {
   color: red;
   background-color: black;
-  width: 300px;
+  width: 200px;
+  padding: 0.5em 1em;
+  text-align: center;
+  font-size: 0.8em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.coding-books-logo-redux {
+  color: #ee220c;
+  background-color: #002626;
+  font-family: "Nunito";
+  font-weight: 800;
+  width: 200px;
   padding: 0.5em 1em;
   text-align: left;
-  font-size: 0.9em;
+  font-size: 1.6rem;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  line-height: 0.9;
+}
+
+.coding-books-logo-symbol {
+  font-size: 1.4rem;
+  color: white;
+}
+
+.coding-books-logo-gray {
+  font-size: 1.4rem;
+  color: #a9a9a9;
+}
+
+.bulleted-list {
+  list-style: disc outside none;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding-left: 1em;
+}
+
+strong {
+  color: #222;
 }
