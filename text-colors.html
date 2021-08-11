@@ -6,7 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/global.css" />
     <link rel="stylesheet" href="css/colors.css" />
-    <title>Document</title>
+    <title>Web Design: Text Colors</title>
+    <script
+      src="https://kit.fontawesome.com/2043bcc2e1.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <h2 class="page-heading">Web Design: Text and Background Colors</h2>
@@ -146,12 +150,13 @@
     <h3>Blue on Red</h3>
     <div class="color-sample blue-on-red">Blue on Red</div>
     <p>
-      Blue text on a red background is notoriously hard to read because it has a
-      "stereo effect" on our eyes. When we see blue text on a red background,
-      our brains are trying to translate the 2D image into a 3D image, making
-      the text seem to pop out and vibrate. This effeect also occurs with green
-      text on red backgrounds. The effect is known as chromostereopsis, and
-      needless to say, it plays havoc with readability.
+      Blue text on a red background is notoriously hard to read because it
+      causes a "stereo effect" on our eyes. When we see blue text on a red
+      background, our brains are trying to translate the 2D image into a 3D
+      image, making the text seem to pop out and vibrate. This effeect also
+      occurs with green text on red backgrounds. The effect is known as
+      <strong>chromostereopsis</strong>, and needless to say, it plays havoc
+      with readability.
     </p>
 
     <h3>Other Combinations to Avoid</h3>
@@ -171,9 +176,9 @@
     </ul>
 
     <p>
-      Along with these and those we've already mentioned above, I would add a
-      few more general things to consider when thinking about text and
-      backgrounds.
+      Along with these combinations and those we've already mentioned above, I
+      would add a few more general things to consider when thinking about text
+      and backgrounds.
     </p>
     <ul class="bulleted-list">
       <li>
@@ -183,25 +188,28 @@
       </li>
       <li>
         Do not use intense (highly saturated) colors for both your text and
-        background. In fact, you should probably reserve intense colors for
-        accent colors, such as the background colors of your primary and
-        possibly secondary buttons.
+        background. You should probably reserve intense colors for accent
+        colors, such as the background colors of your primary buttons and
+        possibly your secondary buttons.
       </li>
-      <li>For text, consider sticking with near black or near white colors.</li>
+      <li>
+        For your default text color, consider sticking with near black or near
+        white.
+      </li>
     </ul>
 
     <h2>Visual Accessibility Guidelines</h2>
 
     <p>
-      We have talked a lot about what not to do regarding text and background
-      colors, but what <em>should</em> we do? Here are some visual accessibility
-      guidelines you should follow.
+      We have talked a lot about what <em>not</em> to do regarding text and
+      background colors, but what <em>should</em> we do? Here are some visual
+      accessibility guidelines you should follow.
     </p>
 
     <ul class="bulleted-list">
       <li>
         <strong>Always Use “alt” Tags</strong> – Using alt tags for all of your
-        images is a simple wew development guideline that you should always
+        images is a simple web development guideline that you should always
         follow for visual accessibility. Also, images can be broken.
       </li>
       <li>
@@ -229,6 +237,36 @@
         (<a href="https://webaim.org/articles/visual/lowvision">WebAIM</a>)
       </li>
     </ul>
+    <p>
+      This last bullet is particularly important, so lets look at a couple
+      examples.
+    </p>
+    <p>
+      In the first example, both the success and failure alerts include icons
+      that are associated with success and failure. They do not rely solely on
+      the green and red colors to convey that information.
+    </p>
+
+    <div class="cart-updated">
+      <i class="far fa-check-circle"></i> Your shopping cart has been
+      successfully updated.
+    </div>
+    <div class="cart-not-updated">
+      <i class="far fa-times-circle"></i> There was a problem trying to update
+      your shopping cart.
+    </div>
+
+    <p>
+      In the next example, the error on form input is highlighted with a warning
+      symbol rather than just a red outline of the input field.
+    </p>
+
+    <div class="input-error">
+      <span class="input-hint"> Please enter your name. </span>
+      <span class="input-error-icon">
+        <i class="fas fa-exclamation-triangle"></i
+      ></span>
+    </div>
 
     <h3>Using Firefox for Help</h3>
 
@@ -288,7 +326,7 @@
       Nunito was a font that looked good at the larger font weight. Decreasing
       the line height is standard practice with larger fonts. We also
       left-justified the text and added a space before the symbol on the second
-      line. The pushed the word books over so that the bottom of the "g" on the
+      line. This pushed the word books over so that the bottom of the "g" on the
       first line was above the "oo" in the word Books. We've still got the
       problem of a low contrast when colors are removed, but keeping red in the
       logo text was a self-imposed requirement.
@@ -301,5 +339,23 @@
     </div>
     <h2>Example: Low Contrast in Book Boxes</h2>
     <p>Place another example here.</p>
+    <div class="book-boxes-low-contrast">
+      <div class="book-box">
+        <div class="book-image"></div>
+        <div class="book-title">High Fidelity</div>
+        <div class="book-author">Nick Hornby</div>
+        <div class="book-price">$8.99</div>
+        <div class="read-now-button">Read Now</div>
+        <div class="add-to-cart-button">Add to Cart</div>
+      </div>
+      <div class="book-box">
+        <div class="book-image"></div>
+        <div class="book-title">High Fidelity</div>
+        <div class="book-author">Nick Hornby</div>
+        <div class="book-price">$8.99</div>
+        <div class="read-now-button">Read Now</div>
+        <div class="add-to-cart-button">Add to Cart</div>
+      </div>
+    </div>
   </body>
 </html>

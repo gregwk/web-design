@@ -141,6 +141,43 @@ p {
   text-align: center;
 }
 
+.cart-updated {
+  display: inline-block;
+  color: white;
+  background-color: green;
+  padding: 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.cart-not-updated {
+  display: inline-block;
+  color: white;
+  background-color: #b51700;
+  padding: 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.input-error {
+  display: flex;
+  justify-content: space-between;
+  border: solid red 2px;
+  border-radius: 5px;
+  padding: 0.5em 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  width: 400px;
+}
+
+.input-hint {
+  color: gray;
+}
+
+.input-error-icon {
+  color: red;
+}
+
 .coding-books-logo {
   color: red;
   background-color: black;
@@ -185,4 +222,33 @@ p {
 
 strong {
   color: #222;
+}
+
+.book-boxes-low-contrast {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  padding: 1em;
+  background-color: #fbf2e4;
+  color: #724690;
+}
+
+.book-box {
+  background-color: #cec5b3;
+  padding: 1em;
+}
+
+.book-image {
+  width: 80px;
+  height: 200px;
+}
+
+.read-now-button {
+  background-color: #6b6182;
+  color: #cec5b3;
+}
+
+.add-to-cart-button {
+  background-color: #724690;
+  color: #cec5b3;
 }
