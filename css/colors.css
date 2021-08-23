@@ -6,10 +6,10 @@ h1,
 h2,
 h3,
 h4 {
-  font-weight: bold;
-  color: royalblue;
   margin-top: 2em;
   margin-bottom: 1em;
+  color: royalblue;
+  font-weight: bold;
 }
 
 p {
@@ -18,8 +18,9 @@ p {
 
 .color-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   color: white;
+
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1em;
 }
 
@@ -102,78 +103,79 @@ p {
 }
 
 .yellow-on-green {
-  color: yellow;
-  background-color: limegreen;
-  width: 300px;
   padding: 1em;
+  width: 300px;
+  background-color: limegreen;
+  color: yellow;
   text-align: center;
 }
 
 .green-on-red {
-  color: limegreen;
-  background-color: red;
-  width: 300px;
   padding: 1em;
+  width: 300px;
+  background-color: red;
+  color: limegreen;
   text-align: center;
 }
 
 .purple-on-green {
-  color: purple;
-  background-color: limegreen;
-  width: 300px;
   padding: 1em;
+  width: 300px;
+  background-color: limegreen;
+  color: purple;
   text-align: center;
 }
 
 .red-on-black {
-  color: red;
-  background-color: black;
-  width: 300px;
   padding: 1em;
+  width: 300px;
+  background-color: black;
+  color: red;
   text-align: center;
 }
 
 .blue-on-red {
-  color: blue;
-  background-color: red;
-  width: 300px;
   padding: 1em;
+  width: 300px;
+  background-color: red;
+  color: blue;
   text-align: center;
 }
 
 .cart-updated {
   display: inline-block;
-  color: white;
-  background-color: green;
-  padding: 1em;
   margin-top: 1em;
   margin-bottom: 1em;
+  padding: 1em;
+  background-color: green;
+  color: white;
 }
 
 .cart-not-updated {
   display: inline-block;
-  color: white;
-  background-color: #b51700;
-  padding: 1em;
   margin-top: 1em;
   margin-bottom: 1em;
+  padding: 1em;
+  background-color: #b51700;
+  color: white;
 }
 
 .input-error-example {
-  margin-top: 1em;
-  margin-bottom: 1em;
   display: flex;
   align-items: center;
+  margin-top: 1em;
+  margin-bottom: 1em;
+
   gap: 1em;
 }
 
 .input-error {
   display: flex;
   justify-content: space-between;
-  border: solid red 2px;
-  border-radius: 5px;
   padding: 0.5em 1em;
   width: 400px;
+  border: solid red 2px;
+  border-radius: 5px;
 }
 
 .input-hint {
@@ -185,45 +187,45 @@ p {
 }
 
 .coding-books-logo {
-  color: red;
-  background-color: black;
-  width: 200px;
-  padding: 0.5em 1em;
-  text-align: center;
-  font-size: 0.8em;
   margin-top: 1em;
   margin-bottom: 1em;
+  padding: 0.5em 1em;
+  width: 200px;
+  background-color: black;
+  color: red;
+  text-align: center;
+  font-size: 0.8em;
 }
 
 .coding-books-logo-redux {
-  color: #ee220c;
-  background-color: #002626;
-  font-family: "Nunito";
-  font-weight: 800;
-  width: 200px;
-  padding: 0.5em 1em;
-  text-align: left;
-  font-size: 1.6rem;
   margin-top: 1em;
   margin-bottom: 1em;
+  padding: 0.5em 1em;
+  width: 200px;
+  background-color: #002626;
+  color: #ee220c;
+  text-align: left;
+  font-weight: 800;
+  font-size: 1.6rem;
+  font-family: "Nunito";
   line-height: 0.9;
 }
 
 .coding-books-logo-symbol {
-  font-size: 1.4rem;
   color: white;
+  font-size: 1.4rem;
 }
 
 .coding-books-logo-gray {
-  font-size: 1.4rem;
   color: #a9a9a9;
+  font-size: 1.4rem;
 }
 
 .bulleted-list {
-  list-style: disc outside none;
   margin-top: 1em;
   margin-bottom: 1em;
   padding-left: 1em;
+  list-style: disc outside none;
 }
 
 strong {
@@ -233,19 +235,21 @@ strong {
 .book-boxes-low-contrast {
   display: flex;
   flex-wrap: wrap;
-  gap: 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
   padding: 1em;
   background-color: #fbf2e4;
   color: #724690;
-  margin-top: 1em;
-  margin-bottom: 1em;
+
+  gap: 1em;
 }
 
 .book-box {
   display: flex;
-  gap: 0.75em;
-  background-color: #cec5b3;
   padding: 0.75em;
+  background-color: #cec5b3;
+
+  gap: 0.75em;
 }
 
 .book-image {
@@ -257,13 +261,14 @@ strong {
 .book-info {
   display: flex;
   flex-direction: column;
-  gap: 0.25em;
   max-width: 25ch;
+
+  gap: 0.25em;
 }
 
 .book-title {
-  font-size: 1.1em;
   font-weight: bold;
+  font-size: 1.1em;
 }
 
 .book-author {
@@ -271,38 +276,39 @@ strong {
 }
 
 .read-now-button {
+  margin-top: auto;
+  padding: 0.25em 1em;
+  border: none;
   background-color: #6b6182;
   color: #cec5b3;
-  padding: 0.25em 1em;
   text-align: center;
   font-size: 0.8em;
-  margin-top: auto;
-  border: none;
 }
 
 .add-to-cart-button {
+  padding: 0.5em 1em;
+  border: none;
   background-color: #724690;
   color: #cec5b3;
-  padding: 0.5em 1em;
   text-align: center;
-  border: none;
 }
 
 .book-boxes-low-contrast-fix {
   display: flex;
   flex-wrap: wrap;
-  gap: 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
   padding: 1em;
   background-color: #fbf2e4;
   color: #724690;
-  margin-top: 1em;
-  margin-bottom: 1em;
+
+  gap: 1em;
 }
 
 .book-boxes-low-contrast-fix .book-box {
-  background-color: white;
   border-radius: 5px;
-  box-shadow: 0px 2px 6px 0 #6b618288;
+  background-color: white;
+  box-shadow: 0 2px 6px 0 #6b618288;
 }
 
 .book-boxes-low-contrast-fix .book-title {
@@ -310,27 +316,39 @@ strong {
 }
 
 .book-boxes-low-contrast-fix .book-author {
-  font-style: italic;
-  font-size: 0.9em;
   color: #6b6182;
   text-decoration: none;
+  font-style: italic;
+  font-size: 0.9em;
 }
 
 .book-boxes-low-contrast-fix .book-price {
-  font-size: 0.9em;
-  font-weight: bold;
   color: #6b6182;
+  font-weight: bold;
+  font-size: 0.9em;
 }
 
 .book-image .read-now-button {
-  color: #ddd;
   width: 100%;
+  color: #ddd;
 }
 
 .book-boxes-low-contrast-fix .add-to-cart-button {
+  align-self: flex-end;
+  margin-top: auto;
   color: white;
   /* text-transform: uppercase; */
   font-size: 0.8em;
-  align-self: flex-end;
-  margin-top: auto;
+}
+
+.login-widget-0 {
+  padding: 1em;
+  background: #ccc;
+}
+
+.login-widget-0 h2 {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  color: black;
+  font: serif;
 }
